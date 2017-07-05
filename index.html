@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<style>
+		@font-face { font-family: 'AFMC Font'; src: url('assets/AFMC-Font.ttf') format('truetype'); }
+		html,body { padding: 0; margin: 0; font-size: 0; background-color: #000; height: 100%; }
+		canvas#screen { position: absolute; left: 50%; top: 50%; background-color: #000; image-rendering: pixelated;}
+		button { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); cursor: pointer; background-color: #000; border: 1px solid #666; color: #eee; font-size: 16px; padding: 16px 24px;  font-family: 'AFMC Font'; }
+	</style>
+</head>
+<body>
+	<canvas id="screen"></canvas>
+	<button onclick="document.body.removeChild(this);window.demo()">START</button>
+</body>
+<script src="invitro.js"></script>
+</html>
